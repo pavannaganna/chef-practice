@@ -2,11 +2,12 @@
 	"name":"webserver",
 	"default_attributes":{
 		"apache": {
-			"greeting":"Webinar"
+			"greeting":"Pavan"
 		}
 	},
 	"run_list":[
-		"recipe[apache]"
+		"recipe[apache]",
+		"recipe[apache::vhosts]" 
 	]
 		
 }
